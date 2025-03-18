@@ -11,6 +11,7 @@ public class singleDigit {
             result = digit(result);
         }
         System.out.println("The single-digits sum of the " + number + " is " + result + ".");
+        scn.close();
     }
 
     public static int digit (int n) {

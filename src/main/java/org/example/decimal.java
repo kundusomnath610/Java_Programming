@@ -13,11 +13,13 @@ public class decimal {
             decimal = decimal / 2;
         }
         System.out.println("The Binary Number is: " + res);
+        scn.close();      
+    }
+}
 
-//        int a = 045; // Octal Number
+
+//   int a = 045; // Octal Number
 //        System.out.println(a);
 //
 //        int b = 0x45; // Hexa decimal number
 //        System.out.println(b);
-    }
-}

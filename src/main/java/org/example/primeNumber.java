@@ -17,6 +17,7 @@ public class primeNumber {
             if (factor == 1)
                 System.out.println(i);
         }
+        scn.close();
     }
 }
 

@@ -13,5 +13,6 @@ public class perfectSquare {
         } else {
             System.out.println("The number is not perfect Square Root: " + num);
         }
+        scn.close();
     }
 }

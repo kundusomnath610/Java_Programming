@@ -15,5 +15,6 @@ public class numberPlus {
             temp /= 10;
         }
         System.out.println("The number is: " + sum);
+        scn.close();
     }
 }

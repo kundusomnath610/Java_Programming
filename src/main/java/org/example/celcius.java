@@ -9,5 +9,6 @@ public class celcius {
         double far = scn.nextDouble();
         double cel = (far - 32) * 5 / 9;
         System.out.println("The value of cel is " + cel);
+        scn.close();
     }
 }

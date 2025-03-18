@@ -1,6 +1,5 @@
 package org.example;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class cubeNumber {
@@ -14,5 +13,6 @@ public class cubeNumber {
             sum = number * number * number;
         }
         System.out.println("The cube is " + number + " : " + sum);
+        scn.close();
     }
 }
