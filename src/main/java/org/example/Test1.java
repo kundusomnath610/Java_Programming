@@ -20,7 +20,7 @@ class Car {
     }
 
     public Car(int i, int j) {
-        this(20, 30);
+       // this(20, 30);
         System.out.println("2- prem Constructor");
     }
 }
