@@ -8,7 +8,7 @@ public class Test1 {
     }
 }
 
-class Car {
+class Car {   
     public Car() {
         this(10);
         System.out.println("0- prem Constructor");
@@ -20,7 +20,7 @@ class Car {
     }
 
     public Car(int i, int j) {
-        
+        this(20, 30);
         System.out.println("2- prem Constructor");
     }
 }
