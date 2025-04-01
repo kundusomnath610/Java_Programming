@@ -8,9 +8,9 @@ public class KodNest {
 
     {
         System.out.println("Non / static block exeute");
-    }
+    } 
 
-    KodNest() {
+    public KodNest() {
         System.out.println("Constructor excuting");
     }
 
