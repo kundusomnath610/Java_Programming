@@ -6,7 +6,7 @@ class Bank {
     private int balance = 10000;
     private int password = 450;
 
-    public void setBalance(int newBalance, int userPass) {
+    public void setBalance(int newBalance, int userPass) { // Set Balance...
         if (password == userPass) {
             balance = newBalance;
         } else {
@@ -14,11 +14,11 @@ class Bank {
         }
     }
 
-    public int getBalance(int userPass) {
+    public int getBalance(int userPass) { // get Balance...
         if (password == userPass) {
-            return balance;
+            return balance; 
         } else {
-            System.out.println("Wrong Password");
+            System.out.println("Wrong Password"); 
             return 0;
         }
     }
