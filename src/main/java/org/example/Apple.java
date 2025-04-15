@@ -11,5 +11,7 @@ public class Apple {
         String userName = og.concat(suf);
         System.out.println("Original Username: " + og);
         System.out.println("New User: " + " " +userName);
+
+        scanner.close();
     }
 }
