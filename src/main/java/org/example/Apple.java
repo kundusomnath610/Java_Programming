@@ -15,3 +15,22 @@ public class Apple {
         scanner.close();
     }
 }
+
+
+
+
+
+/*
+*
+*
+        String s = "Kodnest";
+
+        System.out.println(s.length());
+        System.out.println(s.charAt(5));
+        System.out.println(s.substring(2, 6));
+        System.out.println(s.substring(3));
+*
+*
+*
+*
+* */
