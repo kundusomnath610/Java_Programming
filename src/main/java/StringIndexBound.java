@@ -12,5 +12,6 @@ public class StringIndexBound {
         } else {
             System.out.println("Invalid index.");
         }
+        scanner.close();
     }
 }
