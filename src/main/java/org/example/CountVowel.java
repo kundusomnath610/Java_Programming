@@ -2,7 +2,7 @@ package org.example;
 
 public class CountVowel {
     public static void main(String[] args) {
-        String s = "PROGRAMMING IS FUN";
+        String s = "Somnath";
         System.out.println("The vowel Found in string: " + vowel(s));
     }
 
