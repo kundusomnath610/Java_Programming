@@ -1,18 +1,21 @@
 package org.example;
 
+import java.util.HashSet;
+
 public class CheckDuplicate {
     public static void main(String[] args) {
-        String str = "mac"; // return true false
-        System.out.println(duplicateCharecter(str));
+        String str = "mac"; // should return false
+        System.out.println(duplicateCharacter(str));
     }
 
-    public static boolean duplicateCharecter(String str) {
-        int n = str.length();
-        for (int i = 0; i <= n; i++) {
-            if (str.charAt(i) == str.charAt(i + 1)) {
-                return true;
+    public static boolean duplicateCharacter(String str) {
+        HashSet<Character> seen = new HashSet<>();
+        for (char ch : str.toCharArray()) {
+            if (seen.contains(ch)) {
+                return true; // duplicate found
             }
+            seen.add(ch);
         }
-        return false;
+        return false; // no duplicates
     }
 }
