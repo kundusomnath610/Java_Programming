@@ -1,14 +1,32 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Binary {
     public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 50};
-        System.out.println("The index number is: " + BinarySearch(numbers, 30));
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Enter a array size:- ");
+        int numbers = scn.nextInt();
+        int[] array = new int[numbers];
+        System.out.print("Please enter array element:- ");
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scn.nextInt();
+        }
+        System.out.print("Enter a number: ");
+
+        int numberToFind = scn.nextInt();
+
+        System.out.println("The number found in: " + BinarySearch(array, numberToFind));
+        scn.close();
+        
     }
 
     public static int BinarySearch(int[] numbers, int numberToFind) {
+        
         int low = 0;
         int high = numbers.length - 1;
+        
 
         while(low <= high) {
             int mid = low + (high - low) / 2; 
@@ -26,5 +44,6 @@ public class Binary {
             }
         }
         return -1;
+        
     }
 }
