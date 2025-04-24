@@ -10,7 +10,6 @@ public class Binary {
         int numbers = scn.nextInt();
         int[] array = new int[numbers];
         System.out.print("Please enter array element:- ");
-
         for (int i = 0; i < array.length; i++) {
             array[i] = scn.nextInt();
         }
