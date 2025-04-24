@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Binary {
@@ -14,8 +15,8 @@ public class Binary {
             array[i] = scn.nextInt();
         }
         System.out.print("Enter a number: ");
-
         int numberToFind = scn.nextInt();
+        Arrays.sort(array);
 
         System.out.println("The number found in: " + BinarySearch(array, numberToFind));
         scn.close();
@@ -23,10 +24,8 @@ public class Binary {
     }
 
     public static int BinarySearch(int[] numbers, int numberToFind) {
-        
         int low = 0;
         int high = numbers.length - 1;
-        
 
         while(low <= high) {
             int mid = low + (high - low) / 2; 
@@ -44,6 +43,5 @@ public class Binary {
             }
         }
         return -1;
-        
     }
 }
