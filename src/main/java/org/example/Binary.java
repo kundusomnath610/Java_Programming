@@ -3,7 +3,7 @@ package org.example;
 public class Binary {
     public static void main(String[] args) {
         int[] numbers = {10, 20, 30, 40, 50};
-        System.out.println("The index number is: " + BinarySearch(numbers, 70));
+        System.out.println("The index number is: " + BinarySearch(numbers, 30));
     }
 
     public static int BinarySearch(int[] numbers, int numberToFind) {
@@ -11,7 +11,7 @@ public class Binary {
         int high = numbers.length - 1;
 
         while(low <= high) {
-            int mid = (low + high) / 2; 
+            int mid = low + (high - low) / 2; 
 
             int MiddleNumber = numbers[mid];
 
