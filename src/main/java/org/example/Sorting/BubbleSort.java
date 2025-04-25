@@ -23,8 +23,10 @@ public class BubbleSort {
             }
         }
 
+        // Print the sorted array
+        System.out.println("The sorted array using Bubble sort is:");
         for (int i = 0; i < n; i++) {
-            System.out.println("The Bubble sort is: " + array[i] + " ");
+            System.out.print(array[i] + " ");
         }
         
         sc.close();

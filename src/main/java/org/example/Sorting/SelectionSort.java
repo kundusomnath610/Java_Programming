@@ -5,30 +5,44 @@ import java.util.Scanner;
 public class SelectionSort {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        System.out.print("Enter a Array Number:- ");
-        int minInd = scn.nextInt();
 
-        System.out.println("Enter a Array Element:- ");
-        int[] arr = new int[minInd];
-        for (int i = 0; i < arr.length; i++) {
+        // Take the size of the array as input
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scn.nextInt();
+
+        // Initialize the array
+        int[] arr = new int[n];
+
+        // Take array elements input
+        System.out.println("Enter the array elements:");
+        for (int i = 0; i < n; i++) {
             arr[i] = scn.nextInt();
         }
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            minInd = i;
-            for (int j = i + 1; j < arr.length; j++) {
+        // Selection Sort Algorithm
+        for (int i = 0; i < n - 1; i++) {
+            int minInd = i; // Assume the minimum element is at index i
+
+            // Find the index of the minimum element in the unsorted part
+            for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[minInd]) {
-                    minInd = j;
+                    minInd = j; // Update index of the minimum element
                 }
-                int temp = arr[i];
-                arr[i] = arr[minInd];
-                arr[minInd] = temp;
             }
+
+            // Swap the found minimum element with the element at index i
+            int temp = arr[i];
+            arr[i] = arr[minInd];
+            arr[minInd] = temp;
         }
 
-        for (int i = 0; i < minInd; i++) {
-            System.out.println("The selection sort is: " + arr[i] + " ");
+        // Print the sorted array
+        System.out.println("The sorted array using selection sort is:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
         }
+
+        // Close the scanner
         scn.close();
     }
 }
