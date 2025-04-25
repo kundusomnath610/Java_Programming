@@ -5,9 +5,25 @@ import java.util.Scanner;
 public class StringPalindrom {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        String str1 = scn.nextLine();
+        String str = scn.nextLine();
 
-        StringBuilder sb = new StringBuilder(str1);
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left <= right) {
+            
+        }
+        
+        scn.close();
+    }
+}
+
+
+
+
+/*
+ * 
+ * StringBuilder sb = new StringBuilder(str1);
         String rev = sb.reverse().toString();
 
         if (str1.equals(rev)) {
@@ -15,6 +31,5 @@ public class StringPalindrom {
         } else {
             System.out.println("Not " + str1 + " is palindrome.");
         }
-        scn.close();
-    }
-}
+ * 
+ */
