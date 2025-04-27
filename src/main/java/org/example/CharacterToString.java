@@ -7,11 +7,11 @@ public class CharacterToString {
      Scanner scn = new Scanner(System.in);
      System.out.println("Enter a String:- ");
      String str = scn.nextLine();
-     String digit = "";
+     String digit = ""; //Empty String for storing digits
 
-     for (int i = 0; i < str.length(); i++) {
+     for (int i = 0; i < str.length(); i++) { // loop for the string end..
         char ch = str.charAt(i);
-        if (Character.isDigit(ch)) {
+        if (Character.isDigit(ch)) { // 
             digit += ch;
         }
      }
