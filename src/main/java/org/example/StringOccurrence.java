@@ -6,19 +6,19 @@ public class StringOccurrence {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter a String:- ");
-        String str = scn.nextLine().toLowerCase();
+        String str = scn.nextLine().toLowerCase(); // String input with lower case
         System.out.println("Enter a Chracter which i want to matched:- ");
-        String ch = scn.nextLine().toLowerCase();
-        char chrac = ch.charAt(0);
+        String ch = scn.nextLine().toLowerCase(); // Input Chracter with lower case
+        char chrac = ch.charAt(0); // identify the char
         int count = 0;
 
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == chrac) {
-                count++;
+        for (int i = 0; i < str.length(); i++) { // Loop till string length
+            if (str.charAt(i) == chrac) { // if found matched with input char
+                count++; // increase count variable
             }
         }
 
-        System.out.println("Original String is: " + str);
+        System.out.println("Original String is: " + str); // 
         System.out.println("Enter char is:- " + chrac);
         System.out.println("Total matched char is:- " + count);
 
