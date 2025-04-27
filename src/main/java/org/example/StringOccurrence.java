@@ -18,9 +18,9 @@ public class StringOccurrence {
             }
         }
 
-        System.out.println("Original String is: " + str); // 
-        System.out.println("Enter char is:- " + chrac);
-        System.out.println("Total matched char is:- " + count);
+        System.out.println("Original String is: " + str); // print original string 
+        System.out.println("Enter char is:- " + chrac); // Press the charcater
+        System.out.println("Total matched char is:- " + count); // print the matched char count
 
         scn.close();
     }
