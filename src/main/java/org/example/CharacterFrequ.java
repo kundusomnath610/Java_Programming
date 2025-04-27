@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CharacterFrequ {
     public static void main(String[] args) {
-        String str = "abcdbad"; // a = 2, b = 2, d = 2, c = 1
+        String str = "a b c d "; // a = 2, b = 2, d = 2, c = 1
         System.out.println(Frequencies(str));
     }
 
