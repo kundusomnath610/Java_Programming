@@ -18,7 +18,7 @@ public class KodNest {
 
         System.out.println("Main() Method excuting");
 
-        KodNest k1 = new KodNest();
+        //KodNest k1 = new KodNest();
         // KodNest k2 = new KodNest();
         // KodNest k3 = new KodNest();
 

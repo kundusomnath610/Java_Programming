@@ -9,7 +9,7 @@ public class Mobile {
         System.out.println(s2);
 
         char[] ch = {'s', 'o', 'm', 'n', 'a', 't', 'h', ' ', 'K', 'u', 'n', 'd', 'u'};
-        String s3 = new String(ch);
+        //String s3 = new String(ch);
         System.out.println(ch);
     }
 }
