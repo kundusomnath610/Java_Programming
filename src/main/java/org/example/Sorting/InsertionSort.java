@@ -17,8 +17,21 @@ public class InsertionSort {
         for (int i = 0; i < Array.length; i++) {
             int key = Array[i];
             int j = i - 1;
-            
+
+            while (j >= 0 && Array[i] > key) {
+                Array[j + 1] = Array[j];
+                j--;
+            }
+
+            Array[j + 1] = key;
         }
-        
+
+        System.out.println("The Sorted Array is: ");
+        for (int i = 0; i < n; i++) {
+            System.out.println(Array[i] + " ");
+        }
+
+        scn.close();
+
     }
 }
