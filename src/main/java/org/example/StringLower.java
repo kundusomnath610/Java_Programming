@@ -29,4 +29,3 @@ public class StringLower {
         scn.close();
     }
 }
-
