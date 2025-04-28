@@ -25,10 +25,12 @@ public class InsertionSort {
 
             Array[j + 1] = key;
         }
+        
+        System.out.println();
 
         System.out.println("The Sorted Array is: ");
         for (int i = 0; i < n; i++) {
-            System.out.println(Array[i] + " ");
+            System.out.print(Array[i] + " ");
         }
 
         scn.close();
