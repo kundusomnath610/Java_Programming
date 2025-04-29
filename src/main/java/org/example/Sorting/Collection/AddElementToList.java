@@ -18,11 +18,19 @@ public class AddElementToList {
             list.add(num);
         }
 
+        //  For finding perticular index...
+        System.out.println("Enter a Index number:- ");
+        int index = scn.nextInt();
+
         System.out.println("Size is: " + list.size());
         System.out.print("Element is: ");
         for (Object o : list) {
             System.out.print(o + " ");
         }
+        System.out.println();
+
+        System.out.println("Element is " + index + " at :" + list.get(index) + ".");
+
         scn.close();
     }
 }
