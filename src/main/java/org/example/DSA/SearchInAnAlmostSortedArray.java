@@ -15,6 +15,11 @@ public class SearchInAnAlmostSortedArray {
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
+
+            if (arr[mid] == target) return mid;
+
+            if (arr[mid - 1] == target) return mid - 1;
+            if (arr[mid + 1] == target) return mid + 1;
         }
     }
 }
