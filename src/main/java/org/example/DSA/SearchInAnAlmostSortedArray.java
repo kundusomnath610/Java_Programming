@@ -20,6 +20,15 @@ public class SearchInAnAlmostSortedArray {
 
             if (arr[mid - 1] == target) return mid - 1;
             if (arr[mid + 1] == target) return mid + 1;
+
+            if (arr[mid] < target) {
+                low = mid + 1;
+                return mid + 2;
+            } else {
+                high = mid - 1;
+                return mid - 2;
+            }
         }
+        return -1;
     }
 }
