@@ -1,36 +1,21 @@
 package org.example.DSA;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class DuplicateElement {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter the size of the array: ");
-        int n = scn.nextInt();
-        int[] array = new int[n];
-
-        System.out.println("Enter array elements:");
-        for (int i = 0; i < n; i++) {
-            array[i] = scn.nextInt();
-        }
-
-        Arrays.sort(array);
-
-        boolean hasDuplicates = false;
-        for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] == array[i + 1]) {
-                // Print only the first occurrence of each duplicate
-                if (i == 0 || array[i] != array[i - 1]) {
-                    System.out.println("Duplicate element found: " + array[i]);
-                    hasDuplicates = true;
-                }
+        int[] arr = {1, 8, 2, 6, 4, 8};
+        System.out.println("The element is: " + duplicate(arr));
+    }
+    public static int duplicate(int[] arr) {
+        int count = 0;
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] == arr[i + 1]) {
+                count = arr[i];
             }
         }
-
-        if (!hasDuplicates) {
-            System.out.println("No duplicate elements found.");
-        }
-
-        scn.close();
+        return count;
     }
 }
+
