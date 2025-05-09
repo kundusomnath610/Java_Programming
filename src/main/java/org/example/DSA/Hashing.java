@@ -13,6 +13,6 @@ public class Hashing {
         set.add("Code");
         set.add("Java");
 
-        System.out.println(set.size());
+        System.out.println("The size element is: " + set);
     }
 }
