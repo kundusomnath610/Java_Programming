@@ -1,10 +1,11 @@
 package org.example.DSA;
 
-import java.util.HashSet;
+//import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Hashing {
     public static void main(String[] args) {
-        HashSet set = new HashSet<>();
+        LinkedHashSet set = new LinkedHashSet<>();
 
         set.add(25);
         set.add(33);
