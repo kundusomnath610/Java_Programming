@@ -3,6 +3,9 @@ package org.example;
 import java.util.Scanner;
 
 public class Apple {
+    public Apple(String red, int i) {
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String og = scanner.nextLine();
