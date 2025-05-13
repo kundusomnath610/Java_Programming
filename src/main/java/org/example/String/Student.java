@@ -16,14 +16,14 @@ public class Student {
         return Objects.hash(roll, name);
     }
 
-    @Override
-    public boolean equals(Objects obj) {
-        if (obj.hashCode() == this.hashCode()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    // @Override
+    // //public boolean equals(Objects obj) {
+    //     if (obj.hashCode() == this.hashCode()) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
 
     public static void main(String[] args) {
         Student s1 = new Student(1, "Amit");
