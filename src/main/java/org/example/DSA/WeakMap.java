@@ -18,7 +18,7 @@ public class WeakMap {
 
         System.out.println(map);
 
-        obj1 = null;
+        //obj1 = null;
         System.gc();
         System.out.println(map);
         
