@@ -3,7 +3,7 @@ package org.example.DSA;
 import java.util.HashMap;
 
 public class WeakMap {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         String obj1 = "Java";
         String obj2 = "Python";
@@ -18,8 +18,10 @@ public class WeakMap {
 
         System.out.println(map);
 
-        //obj1 = null;
+        obj1 = null;
         System.gc();
+        Thread.sleep(3000);
+
         System.out.println(map);
         
     }
