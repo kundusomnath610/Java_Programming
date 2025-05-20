@@ -41,7 +41,7 @@ public class StackImpl {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main method..
 
         Scanner scn = new Scanner(System.in);
         StackImpl st = new StackImpl(5);
