@@ -1,5 +1,7 @@
 package org.example.DSA;
 
+import java.util.Scanner;
+
 public class StackImpl {
 
     private int top = -1;
@@ -32,16 +34,37 @@ public class StackImpl {
         }
     }
 
+    public void printStack() {
+        for (int i = 0; i <= top; i++) {
+            System.out.print(stack[i] + " ");
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        StackImpl stack = new StackImpl(5);
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
+        Scanner scn = new Scanner(System.in);
+        StackImpl st = new StackImpl(5);
 
-        System.out.println(stack.pop()); // Output: 30
-        System.out.println(stack.pop()); // Output: 20
-        System.out.println(stack.pop()); // Output: 10
-        System.out.println(stack.pop()); // Output: Stack is empty..
+        while (true) {
+            System.out.println("Enter a Operation");
+            System.out.println("1 - For push \n 2 - For Pop \n 3 - For Print \n 4 - For Exit");
+            int op = scn.nextInt();
+
+            if (op == 4) {
+                break;
+            } else if (op == 1) {
+                System.out.println("Enter a Number:");
+                int num = scn.nextInt();
+                st.push(num);
+            } else if (op == 2) {
+                System.out.println("Enter a number for pop");
+                st.pop();
+            } else if (op == 3) {
+                st.printStack();
+            }
+        }
+        scn.close();
+
     }
 }
