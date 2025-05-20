@@ -6,8 +6,8 @@ public class StackImpl {
     public static void main(String[] args) {
         
         ArrayList<Integer> al = new ArrayList<>();
-        al.add(10);
-        al.add(20);
+        al.add(10); // 1
+        al.add(20); //
         al.add(30);
         al.add(40);
         al.add(50);
@@ -15,8 +15,11 @@ public class StackImpl {
 
         System.out.println(al);
 
-        al.remove(20);
-        al.remove(30);
-        al.remove(40);
+        al.remove(2);
+        al.remove(3);
+
+
+        System.out.println(al);
+        System.out.println(al.size());
     }
 }
