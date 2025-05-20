@@ -12,5 +12,11 @@ public class StackImpl {
         al.add(40);
         al.add(50);
         al.add(60);
+
+        System.out.println(al);
+
+        al.remove(20);
+        al.remove(30);
+        al.remove(40);
     }
 }
