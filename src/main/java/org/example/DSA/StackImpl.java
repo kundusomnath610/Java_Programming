@@ -7,16 +7,17 @@ public class StackImpl {
         
         ArrayList<Integer> al = new ArrayList<>();
         al.add(10); // 1
-        al.add(20); //
-        al.add(30);
-        al.add(40);
-        al.add(50);
-        al.add(60);
+        al.add(20); // 2
+        al.add(30); // 3
+        al.add(40); // 4
+        al.add(50); // 5
+        al.add(60); // 6
 
         System.out.println(al);
 
+       
+        al.remove(5);
         al.remove(2);
-        al.remove(3);
 
 
         System.out.println(al);
