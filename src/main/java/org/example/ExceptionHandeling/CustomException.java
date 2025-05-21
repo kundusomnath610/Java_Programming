@@ -19,6 +19,7 @@ public class CustomException {
                 throw new EligibilityException("Your marks lower then 80 percent"); 
 
         }
+        scn.close();
 
     }
 }
