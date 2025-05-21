@@ -3,6 +3,7 @@ package org.example.ExceptionHandeling;
 import java.util.Scanner;
 
 public class CustomException {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws EligibilityException {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter a Branch");
