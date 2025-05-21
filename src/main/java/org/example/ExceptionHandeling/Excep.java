@@ -16,10 +16,12 @@ public class Excep {
 
             System.out.println("The result is: " + result);
         } catch (ArithmeticException e) {
-            System.out.println();
+            System.out.println("Exception Occure.. Please check the number");
         }
 
+
         System.out.println("Program run Fine");
+
         scn.close();
     }
 }
