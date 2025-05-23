@@ -25,6 +25,7 @@ public class ComparableInterface {
         for (Person p : list) {
             System.out.println(p);
         }
+        sc.close();
     }
 }
 
