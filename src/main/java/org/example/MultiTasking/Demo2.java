@@ -2,14 +2,36 @@ package org.example.MultiTasking;
 
 public class Demo2 {
     public static void main(String[] args) {
-        String tname = Thread.currentThread().getName();
-        System.out.println("Thread is excuting the main() " + tname);
+        Alphabate at = new Alphabate();
+        Number nt = new Number();
+
+        at.start();
+        nt.start();
     }
 }
 
-class MyThread extends Thread {
+class Alphabate extends Thread {
     public void run() {
-        String tname = Thread.currentThread().getName();
-        System.out.println("Thread is running()" + tname);
+        try {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("Printing");
+                Thread.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Exception handled");
+        }
+    }
+}
+
+class Number extends Thread {
+    public void run() {
+        try {
+            for (int i = 0; i <= 10; i++) {
+                System.out.println("Typing");
+                Thread.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Exception handled");
+        }
     }
 }
