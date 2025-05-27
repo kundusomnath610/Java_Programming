@@ -5,12 +5,15 @@ public class Demo2 {
         Alphabate at = new Alphabate();
         Number nt = new Number();
 
-        at.start();
-        nt.start();
+        Thread t1 = new Thread(at);
+        Thread t2 = new Thread(nt);
+
+        t1.start();
+        t2.start();
     }
 }
 
-class Alphabate extends Thread {
+class Alphabate implements Runnable {
     public void run() {
         try {
             for (int i = 1; i <= 10; i++) {
@@ -18,12 +21,12 @@ class Alphabate extends Thread {
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
-            System.out.println("Exception handled");
+            System.out.println("Exception handled in Alphabate");
         }
     }
 }
 
-class Number extends Thread {
+class Number implements Runnable {
     public void run() {
         try {
             for (int i = 0; i <= 10; i++) {
@@ -31,7 +34,7 @@ class Number extends Thread {
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
-            System.out.println("Exception handled");
+            System.out.println("Exception handled in Number");
         }
     }
 }
