@@ -11,6 +11,10 @@ public class DemoInter {
                 System.out.println("Terminating thread....");
                 t.interrupt();
             }
+
+            if (t.isInterrupted()) {
+                return;
+            }
         }
     }
 }
