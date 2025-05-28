@@ -2,7 +2,7 @@ package org.example.MultiTasking;
 
 public class Demo4 {
     public static void main(String[] args) {
-        VisitDoctor task = new VisitDoctor();
+        BookmyShow task = new BookmyShow();
         Thread t1 = new Thread(task);
         t1.setName("Superman");
         Thread t2 = new Thread(task);
@@ -13,16 +13,24 @@ public class Demo4 {
     }
 }
 
-class VisitDoctor implements Runnable {
+class BookmyShow implements Runnable {
     synchronized public void run() {
         try {
             String tname = Thread.currentThread().getName();
-            System.out.println(tname + " has enter clinic");
+            System.out.println(tname + " is selecting seat");
             Thread.sleep(2000);
-            System.out.println(tname + " Geeting treatment");
+            System.out.println(tname + " is checking movie list");
             Thread.sleep(2000);
-            System.out.println(tname + " Has exited....");
+            System.out.println(tname + " is selecting date and place..");
             Thread.sleep(2000);
+
+
+            synchronized(this) {
+                for (int i = 0; i <= 3; i++) {
+                    System.out.println(tname + " Movie is going on");
+                }
+            }
+
         } catch(Exception e) {
             //....
         }
