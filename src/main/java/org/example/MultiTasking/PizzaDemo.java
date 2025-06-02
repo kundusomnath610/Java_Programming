@@ -15,7 +15,15 @@ public class PizzaDemo {
 
 class PizzaHouse {
     int token = 1;
+    boolean available = false;
     public void bake() {
+        if(available == false) {
+            System.out.println("Please made the pizza for customer...");
+        }
+        boolean available = true;
+        if (available == true)
+            System.out.println("Pizza is ready to eat...");
+
         System.out.println("Chef preaperd the order: " + token);
         token++;
     }
