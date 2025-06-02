@@ -28,6 +28,14 @@ class PizzaHouse {
         token++;
     }
     public void eat() {
+
+        if(available == false) {
+            System.out.println("Please made the pizza for customer...");
+        }
+        boolean available = true;
+        if (available == true)
+            System.out.println("Pizza is ready to eat...");
+            
         System.out.println("Customer has collected pizza for order " + token);
     }
 }
