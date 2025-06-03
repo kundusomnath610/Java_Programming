@@ -14,8 +14,8 @@ public class FileHandling {
         File f = new File("Sample.txt");
 
 
-        FileWriter writer = new FileWriter(f);
-        writer.write("Hello from javaScript");
+        FileWriter writer = new FileWriter(f, true);
+        writer.write("\nHello from C++");
 
         writer.close();
 
