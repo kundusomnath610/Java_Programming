@@ -6,6 +6,7 @@
 package org.example.SeriallizeDeserialize;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 
 
@@ -13,11 +14,20 @@ public class FileHandling {
     public static void main(String[] args) throws Exception {
         File f = new File("Sample.txt");
 
+        FileReader read = new FileReader(f);
+        int ch = 0;
 
-        FileWriter writer = new FileWriter(f, true);
-        writer.write("\nHello from C++");
+        while ((ch = read.read()) != -1) {
+            System.out.println((char)ch);
+        }
 
-        writer.close();
+        read.close();
+
+
+        // FileWriter writer = new FileWriter(f, true);
+        // writer.write("\nHello from C++");
+
+        // writer.close();
 
         
     }
