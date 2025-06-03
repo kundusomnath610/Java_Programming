@@ -19,11 +19,17 @@ public class FileHandling {
 
         writer.close();
 
-        // if (f.exists() == true)
-        //     System.out.println("File is present");
-        // else 
-        //     System.out.println("File not found");
-        //     f.createNewFile();
+        
     }
 
 }
+
+
+/*
+ * // if (f.exists() == true)
+    //     System.out.println("File is present");
+        // else 
+        //     System.out.println("File not found");
+        //     f.createNewFile();
+ * 
+ */
