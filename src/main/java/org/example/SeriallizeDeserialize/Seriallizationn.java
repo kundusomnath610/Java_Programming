@@ -12,6 +12,7 @@ public class Seriallizationn {
 
         Student st = (Student) ois.readObject();
         System.out.println(st);
+        ois.close();
     }
 }
 
